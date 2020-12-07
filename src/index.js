@@ -1,14 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from './containers/App';
+import reportWebVitals from "./reportWebVitals";
+import "tachyons";
 
+
+/* 
+I want reactDom package to use the fx render
+to render the App that is inside the fx
+Render CardList and pass as a property call robots the array robots from robots.js
+
+*/
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+     <App /> 
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
